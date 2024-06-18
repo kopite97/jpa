@@ -35,17 +35,8 @@ public class ManyToOneRelationshipProblem {
     static String PASSWORD = "password";
     static String IMAGE_URL = "https://www.naver.com";
 
-
     @Test
     @Order(1)
-    @Transactional
-    @DisplayName("init")
-    void init() {
-
-    }
-
-    @Test
-    @Order(2)
     @Transactional
     @DisplayName("다대일 관계 문제발생 예제 1")
     void test1() {
@@ -77,7 +68,7 @@ public class ManyToOneRelationshipProblem {
     }
 
     @Test
-    @Order(3)
+    @Order(2)
     @Transactional
     @DisplayName("다대일 관계 문제발생 예제 2 + 해결")
     void test2() {
